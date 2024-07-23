@@ -8,9 +8,9 @@ if (!firstInput?.trim()) {
   if (!secondInput?.trim()) {
     alert("Your second input was either canceled or left empty. Refresh the page and try again.");
   } else {
-    const secondInputArray = secondInput.toLowerCase().replace(' ','').split('')
-    const result = filterSelectedCharacters(firstInput, secondInputArray)
-    console.log(result)
+    const secondInputArray = secondInput.toLowerCase().replaceAll(' ','').split('');
+    const result = filterSelectedCharacters(firstInput, secondInputArray);
+    console.log(result);
   }
 }
 
