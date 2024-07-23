@@ -15,8 +15,8 @@ if (!firstInput?.trim()) {
 }
 
 function filterSelectedCharacters (fullInput, extractions ) {
-  let filteredInput = [];
-  for (let character of fullInput) {
+  const filteredInput = [];
+  for (const character of fullInput) {
         if (!extractions.includes(character.toLowerCase())) {
           filteredInput.push(character);
       }
